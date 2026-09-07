@@ -29,7 +29,7 @@ the document is malformed.
 | Last working version | **5.2.0** (published 2026-08-26) |
 | `latest` at time of writing | 5.10.0 |
 | Affected endpoint | `https://cn-api.sg.testnet.t3n.terminal3.io/api/trust-manifest` |
-| Workaround | pin `@terminal3/t3n-sdk@5.2.0` |
+| Workaround | pin `@terminal3/t3n-sdk@5.2.0` (confirmed by Terminal 3 DevRel) |
 
 ---
 
@@ -138,6 +138,18 @@ who started after 28 August and installed `latest` hit this before they could au
 macOS 15 (darwin 25.6.0), Node v26.5.0, npm 11.17.0. Verified against testnet on
 2026-09-06. Pinning 5.2.0 authenticates successfully and returns the expected
 `did:t3n:...`.
+
+## Status
+
+Reported to Ian Chong, DevRel Lead at Terminal 3, on 2026-09-06. His reply on
+2026-09-07:
+
+> Thank for the heads up and yes please use sdkv5.2 for this challenge
+
+So the 5.2.0 pin is the sanctioned configuration for the current challenge. The
+underlying manifest/validator mismatch is still unfixed as of this writing, and a
+plain `npm install @terminal3/t3n-sdk` still resolves to a version that cannot reach
+testnet.
 
 ---
 
