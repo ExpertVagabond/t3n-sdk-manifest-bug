@@ -1,0 +1,14 @@
+4.46.0    OK
+5.0.0     OK
+5.1.0     OK
+5.2.0     OK
+5.3.0     FAIL Trust manifest at https://cn-api.sg.testnet.t3n.terminal3.io/api/trust-manifest is ma
+5.4.0     FAIL Trust manifest at https://cn-api.sg.testnet.t3n.terminal3.io/api/trust-manifest is ma
+5.5.0     FAIL Trust manifest at https://cn-api.sg.testnet.t3n.terminal3.io/api/trust-manifest is ma
+5.6.0     FAIL Trust manifest at https://cn-api.sg.testnet.t3n.terminal3.io/api/trust-manifest is ma
+5.8.0     FAIL Trust manifest at https://cn-api.sg.testnet.t3n.terminal3.io/api/trust-manifest is ma
+5.10.0    FAIL Trust manifest at https://cn-api.sg.testnet.t3n.terminal3.io/api/trust-manifest is ma
+
+last working : 5.2.0
+first broken : 5.3.0
+workaround   : npm install @terminal3/t3n-sdk@5.2.0
